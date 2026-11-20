@@ -13,8 +13,31 @@ st.set_page_config(
     layout="wide"
 )
 
+
 st.title("🏗️ CIVIL CALCULATOR")
+
 st.subheader("Soil Engineering & Land Cost Analysis")
+
+st.markdown("""
+<div style="
+    background: linear-gradient(120deg, #173D5B, #2877A5);
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
+">
+    <h3 style="margin:0; color:white;">
+        DEVELOPER
+    </h3>
+    <h2 style="margin:5px 0; color:white;">
+        KELOMPOK 5
+    </h2>
+    <p style="margin:0; color:#DCEEFF;">
+        KELAS EE | CIVIL ENGINEERING
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
 
 st.info(
     "Aplikasi perhitungan teknik sipil untuk "
@@ -508,8 +531,21 @@ elif menu == "Laporan":
             "perhitungan terlebih dahulu."
         )
 
+
+st.sidebar.divider()
+
+st.sidebar.markdown("### 👨‍💻 Developer")
+
+st.sidebar.markdown("""
+**KELOMPOK 5**
+
+Kelas EE
+
+Civil Engineering
+""")
+
 st.sidebar.divider()
 
 st.sidebar.caption(
-    "CIVIL CALCULATOR | Python & Streamlit"
+    "CIVIL CALCULATOR | Developed by Kelompok 5"
 )
